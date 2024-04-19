@@ -5,6 +5,7 @@ import {
 import Root from "../Root";
 import Error from "../Error/Error";
 import Home from "../Home/Home";
+import Login from "../Log/Login/Login";
 
 const Routes = createBrowserRouter([
     {
@@ -17,12 +18,8 @@ const Routes = createBrowserRouter([
               element: <Home/> ,
             },
             {
-              path: "/",
-              element: <Home/> ,
-            },
-            {
-              path: "/",
-              element: <Home/> ,
+              path: "/login",
+              element: <Login/> ,
             },
           ],
 
