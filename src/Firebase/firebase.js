@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBYDw-3luOpt8j6t1Ssr7d7XqgY2CgLujE",
-  authDomain: "elegentfation-25262.firebaseapp.com",
-  projectId: "elegentfation-25262",
-  storageBucket: "elegentfation-25262.appspot.com",
-  messagingSenderId: "881015542704",
-  appId: "1:881015542704:web:9394831a29836a60adfc75"
+  apiKey: "AIzaSyCTmdIKim9xY7qCGM3WNPGRmN8WD83LZbE",
+  authDomain: "shedo-18271.firebaseapp.com",
+  projectId: "shedo-18271",
+  storageBucket: "shedo-18271.appspot.com",
+  messagingSenderId: "29427652260",
+  appId: "1:29427652260:web:15471e6b0df9806cc37831"
 };
 
 // Initialize Firebase

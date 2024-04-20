@@ -5,10 +5,10 @@ import Footer from "./Shared/Footer/Footer";
 const Root = () => {
     return (
         <div className="relative">
-           <div  className=" fixed  top-0 w-full z-50">
+           <div  className=" fixed  top-0 w-full z-50 mb-10">
            <Navbar /> 
-           </div><br /><br /> <br /><br />
-            <div className="min-h-screen   border-x-4 border-sky-500 container mx-auto">
+           </div> 
+            <div className="min-h-screen py-10  lg:py-24  container mx-auto">
                 <Outlet />
             </div>
             <div className="z-10">

@@ -1,9 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
+import {  Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/Logo/logo.png'
 import { BsCart2 } from "react-icons/bs";
-import SearchNav from './SearchNav';
-
-
+import login from '../../assets/Image/login.jpg';
+import Form from '../../Log/Login/Form';
+import './nav.css'
 const Navbar = () => {
 
     const navLink = <>
@@ -44,11 +44,26 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end px-5 gap-5">
                     <BsCart2 className=' text-2xl ' />
-                    <Link to='/login' className="btn md:w-32 btn-outline">Login</Link>
+                    <Link className="btn md:w-32 btn-outline" onClick={() => document.getElementById('my_modal_3').showModal()}>Login</Link>
+                    <dialog id="my_modal_3" className="modal">
+                        <div className="modal-box">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
 
+                            <div className='grid grid-cols-1 lg:grid-cols-2'>
+                            <figure className='hidden  lg:block'><img src={login} alt="Album" /></figure>
+                            <div>
+                            <Form />
+                            </div>
+                            </div>
+
+                        </div>
+                    </dialog>
                 </div>
             </div>
-         
+
 
         </div>
     );
