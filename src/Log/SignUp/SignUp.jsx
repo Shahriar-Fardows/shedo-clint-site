@@ -2,7 +2,7 @@ import signUp from '../../assets/Image/SignUp.jpg';
 const SignUp = () => {
     return (
         <div className="py-10  lg:py-24 px-5">
-            <h1 className="text-2xl font-semibold text-center">Sign Up.......!</h1><br /><br /><br />
+            <h1 className="text-2xl font-semibold text-center">Sign Up...!</h1><br /><br /><br />
 
             <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
                 <div className='hidden lg:block'>
