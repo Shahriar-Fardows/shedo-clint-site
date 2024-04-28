@@ -12,7 +12,7 @@ const Banner = () => {
 
   return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel auto>
+      <Carousel auto >
         {images.map((imageData) => (
           <img key={imageData.id} src={imageData.image} alt={`Banner ${imageData.id}`} />
         ))}

@@ -1,11 +1,25 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Auth/AuthProvider";
 
 const Form = () => {
+    const { createUser } = useContext(AuthContext);
+    const submitForm = (e) => {
+        e.preventDefault();
+        const form = new FormData(e.target);
+        const email = form.get('email');
+        const password = form.get('password');
+        const user = { email, password };
+        console.log(user);
+        e.target.reset();
+    }
+
+
     return (
 
 
         <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-            <form className="space-y-6" action="#">
+            <form onSubmit={submitForm} className="space-y-6" action="#">
                 <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
                 <div>
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
